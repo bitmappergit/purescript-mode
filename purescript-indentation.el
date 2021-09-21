@@ -120,8 +120,8 @@
 
 (defconst purescript-indentation-mode-map
   (let ((keymap (make-sparse-keymap)))
-    (define-key keymap [?\r] 'purescript-newline-and-indent)
-    (define-key keymap [backspace] 'purescript-indentation-delete-backward-char)
+    (define-key keymap (kbd "<return>") 'purescript-newline-and-indent)
+    (define-key keymap (kbd "<backspace>") 'purescript-indentation-delete-backward-char)
     (define-key keymap [?\C-d] 'purescript-indentation-delete-char)
     keymap))
 
